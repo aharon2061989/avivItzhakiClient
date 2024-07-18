@@ -1,0 +1,88 @@
+.homePageHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homePageMainLine {
+    text-decoration: underline;
+    color: black;
+}
+
+.headerText {
+    width: 50%;
+    background-color: gainsboro;
+    color: black;
+    padding: 3px;
+    
+}
+
+.refundsImg {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#information {
+    align-items: center;
+}
+
+ul li {
+    list-style-position:inside;
+}
+
+@media (max-width: 768px) {
+
+    .homePageHeader {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+    }
+
+    .headerText {
+        width: 99%;
+    }
+
+    .refundsImg {
+        height: 200px;
+        width: 100%;
+    }
+
+    .headerText h1 {
+        font-size: 1.5em;
+    }
+
+    .headerText h2 {
+        font-size: 1.2em;
+    }
+
+    .headerText h4 {
+        font-size: 1em;
+    }
+
+    .headerText li {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerText h1 {
+        font-size: 1.2em;
+    }
+
+    .headerText h2 {
+        font-size: 1em;
+    }
+
+    .headerText h4 {
+        font-size: 0.9em;
+    }
+
+    .headerText li {
+        font-size: 0.8em;
+    }
+}
+
+ 
+
+
