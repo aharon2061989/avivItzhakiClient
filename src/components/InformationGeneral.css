@@ -1,0 +1,28 @@
+.informationGeneralHeader {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.informationGeneralImage {
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.textInfo {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+
+    .informationGeneralHeader {
+        flex-direction:column;
+    }
+
+    .informationGeneralImage {
+        height: auto;
+        width: 100%;
+    }
+}

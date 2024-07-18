@@ -1,0 +1,28 @@
+.pensionInfoHeader {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.pensionAdviceImage {
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.infoText {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+
+    .pensionInfoHeader {
+        flex-direction:column;
+    }
+
+    .pensionAdviceImage {
+        height: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+.severancePayInfoHeader {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.secerancePayImage {
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.infoText {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+
+    .severancePayInfoHeader {
+        flex-direction:column;
+    }
+
+    .secerancePayImage {
+        height: auto;
+        width: 100%;
+    }
+}

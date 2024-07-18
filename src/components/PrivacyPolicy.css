@@ -1,0 +1,68 @@
+.privacy-policy {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    direction: rtl; /* Right-to-left text direction */
+    text-align: right; /* Right align the text */
+}
+
+.privacy-policy h1, .privacy-policy h2, .privacy-policy h3 {
+    color: #333;
+}
+
+.privacy-policy p, .privacy-policy ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.privacy-policy ul {
+    padding-left: 20px;
+}
+
+.privacy-policy li {
+    margin-bottom: 10px;
+}
+
+/* התאמת העיצוב למסכים קטנים יותר */
+@media (max-width: 768px) {
+    .privacy-policy {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .privacy-policy h1 {
+        font-size: 1.5em;
+    }
+
+    .privacy-policy h2 {
+        font-size: 1.3em;
+    }
+
+    .privacy-policy h3 {
+        font-size: 1.1em;
+    }
+
+    .privacy-policy p, .privacy-policy ul {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-policy h1 {
+        font-size: 1.2em;
+    }
+
+    .privacy-policy h2 {
+        font-size: 1.1em;
+    }
+
+    .privacy-policy h3 {
+        font-size: 1em;
+    }
+
+    .privacy-policy p, .privacy-policy ul {
+        font-size: 0.9em;
+    }
+}

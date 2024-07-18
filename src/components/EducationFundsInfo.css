@@ -1,0 +1,28 @@
+.educationFundsHeader {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.educationFundsHeaderImage {
+    height: auto;
+    width: 50%;
+    float: left;
+}
+
+.infoText {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+
+    .educationFundsHeader {
+        flex-direction:column;
+    }
+
+    .educationFundsHeaderImage {
+        height: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+body {
+    text-align: center;
+}
+
+.contactLogo {
+    width: 100%;
+    height: auto;
+}
+
+.contactPageForm {
+    height: 410px;
+    background-color: rgb(206, 205, 205);
+    color: white;
+    display: flex;
+    margin-top: -4px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    direction: rtl;
+}
+
+.contactPageForm input {
+    font-size: x-large;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contactFormInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+}
+
+.secondLogo {
+    height:460px;
+    width: 50%;
+    float: left;
+}
+
+.contactPageFormButton {
+    background-color: green;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contactPageIcons {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+
+    .contactUs {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .contactFormInputs {
+        width: 85%;
+    }
+
+    .contactLogo {
+        height: 250px;
+    }
+
+    .contactPageMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondLogo {
+        display: none;
+    }
+
+}

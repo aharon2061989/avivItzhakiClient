@@ -25,7 +25,7 @@ function ContactForm() {
             subject
         };
         
-        fetch('http://localhost:8080/email/register', {
+        fetch('https://aviv-itzhaki-server-9c0d7550483a.herokuapp.com/email/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
