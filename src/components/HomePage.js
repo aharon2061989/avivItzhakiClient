@@ -1,6 +1,6 @@
 import React from "react";
 import './HomePage.css';
-// import ContactForm from "./ContactForm";
+import ContactForm from "./ContactForm";
 
 function HomePage() {
 
@@ -25,7 +25,7 @@ function HomePage() {
                     <h4>אני כאן כדי לענות על כל שאלה שיש לכם.</h4>
                 </div>
             </div>
-            {/* <ContactForm/> */}
+            <ContactForm/>
         </div>
 
     );

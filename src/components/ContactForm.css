@@ -1,0 +1,94 @@
+.contactForm {
+    height: 220px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.form {
+    display: flex;
+    margin-top: 50px;
+    direction: rtl;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.contactForm input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.formHeader {
+    text-align: center;
+}
+
+.formSubmitButton {
+    height: 37px;
+    font-weight: bold;
+    font-size: large;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 150px;
+}
+
+ul li {
+    list-style-position:inside;
+}
+
+.form ::placeholder {
+    font-size: x-large;
+    float: right;
+}
+
+
+@media (max-width: 768px) {
+    .contactForm{
+        height: auto;
+        text-align: center;
+    }
+
+    .form {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .form input {
+        width: 70%;
+    }
+
+    .formHeader {
+        font-size: 1.5em;
+    }
+
+    .form input {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .formSubmitButton {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formHeader {
+        font-size: 1.2em;
+    }
+
+    .contactForm input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .formSubmitButton {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
