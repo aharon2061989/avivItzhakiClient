@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import './ContactPage.css';
-import {faSquareWhatsapp, faSquareInstagram, faFacebook} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import { faSquarePhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
 
 Modal.setAppElement('#root');
@@ -95,13 +92,7 @@ function ContactPage() {
                             className="subject"
                         />
                         <br/>
-                        <button type="submit" className="contactPageFormButton">הצטרפו אליי</button>
-                        {/* <div className="contactPageIcons">
-                            <a href="https://wa.me/972504066900" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareWhatsapp} size="2xl" style={{color: "#028860",}}/></a>
-                            <a href="tel:+97212345678"><FontAwesomeIcon icon={faSquarePhoneFlip} size="2xl" style={{color: "#003694",}}/></a> 
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareInstagram} size="2xl" style={{color: "#f773c7",}}/></a> 
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} size="2xl" style={{color: "#1877F7",}}/></a> 
-                        </div> */}
+                        <button type="submit" className="contactPageFormButton">שליחת פרטים</button>
                     </form>
                 </div>
             </div>
