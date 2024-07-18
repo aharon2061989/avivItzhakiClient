@@ -15,17 +15,7 @@ function NavbarComponent() {
                     <a href="https://wa.me/972504066900" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareWhatsapp} size="2xl" style={{color: "#028860",}}/></a>
                 </div>
                 <div className="rightIcons">
-                    <a className="phone" href="tel:+972504066900"><h4>050-406-6900</h4></a>
-                    <FontAwesomeIcon className="icon" icon={faPhone} flip="horizontal"
-                    size="xl" style={{"--fa-secondary-color": "#ffffff",}}/>
-                    <a className="email" href="mailto:avivtaxes@gmail.com"><h4>avivtaxes@gmail.com</h4></a>
-                    <FontAwesomeIcon className="icon" icon={faEnvelope} size="xl"/>
-                </div>
-            </div>
-            <div className="homeHeader">
-                <div>
-                    <img src="/images/logo.jpeg" alt="logo" className="headerLogo" title="logo"/>
-                </div>
+
                 <div className="links">
                     <div className="dropdown">
                         <Link className="secondNav" id="information"><h3>מידע</h3></Link>
@@ -39,6 +29,14 @@ function NavbarComponent() {
                     <Link to='/Forms' className="secondNav"><h3>טפסים להורדה</h3></Link>
                     <Link to='/ContactPage' className="secondNav"><h3>צור קשר</h3></Link>
                     <Link to='/' className="secondNav" id=""><h3>ראשי</h3></Link>
+                </div>
+
+
+                    <a className="phone" href="tel:+972504066900"><h4>050-406-6900</h4></a>
+                    <FontAwesomeIcon className="icon" icon={faPhone} flip="horizontal"
+                    size="xl" style={{"--fa-secondary-color": "#ffffff",}}/>
+                    <a className="email" href="mailto:avivtaxes@gmail.com"><h4>avivtaxes@gmail.com</h4></a>
+                    <FontAwesomeIcon className="icon" icon={faEnvelope} size="xl"/>
                 </div>
             </div>
         </div>

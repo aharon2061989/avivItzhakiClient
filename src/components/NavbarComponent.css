@@ -74,7 +74,7 @@ a:hover {
 }
 
 .secondNav {
-    color: black;
+    color: white;
     margin-right: 30px;
 }
 
@@ -105,11 +105,10 @@ a:hover {
     display: block;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         height: auto;
-        
     }
 
     #firstLink {
@@ -167,4 +166,5 @@ a:hover {
     .secondNav h3 {
         font-size: 1em;
     }
-}
+} */
+ 
