@@ -46,9 +46,6 @@ function ContactPage() {
         });
     }
 
-    const isFormValid = fullName && email && phoneNumber;
-
-
     
 
     return(
