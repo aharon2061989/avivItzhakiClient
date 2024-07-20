@@ -117,23 +117,48 @@ a:hover {
 @media (max-width: 768px) {
     .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 
     .leftIcons {
-        display: flex;
-        flex-direction: row;
         float: left;
+        padding: 10px 10px 10px 10px;
     }
 
     .phonemailIcons {
-        display: flex;
-        flex-direction: column;
+        display: none;
+    }
+
+    .rightIcons {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
 
 }
+
+::placeholder {
+    color: #888; 
+    opacity: 1; 
+  }
+  
+  ::-webkit-input-placeholder { 
+    color: #888;
+    opacity: 1;
+  }
+  
+  input:-ms-input-placeholder { 
+    color: #888;
+  }
+  
+  input::-moz-placeholder { 
+    color: #888;
+  }
+  
+  input:-moz-placeholder { 
+    color: #888;
+  }
+  
 
