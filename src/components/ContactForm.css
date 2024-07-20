@@ -41,8 +41,26 @@ ul li {
 .form ::placeholder {
     font-size: x-large;
     float: right;
+    color: #888; 
+    opacity: 1;
 }
-
+  
+input::-webkit-input-placeholder {
+    color: #888;
+    opacity: 1;
+}
+  
+input:-ms-input-placeholder { 
+    color: #888;
+}
+  
+input::-moz-placeholder { 
+    color: #888;
+}
+  
+input:-moz-placeholder { 
+    color: #888;
+}
 
 @media (max-width: 768px) {
     .contactForm{
@@ -102,25 +120,5 @@ ul li {
     }
 }
 
-::placeholder {
-    color: #888; 
-    opacity: 1; 
-  }
-  
-  ::-webkit-input-placeholder { 
-    color: #888;
-    opacity: 1;
-  }
-  
-  input:-ms-input-placeholder { 
-    color: #888;
-  }
-  
-  input::-moz-placeholder { 
-    color: #888;
-  }
-  
-  input:-moz-placeholder { 
-    color: #888;
-  }
+
   
