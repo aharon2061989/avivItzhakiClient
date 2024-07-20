@@ -63,9 +63,14 @@ ul li {
     }
 
     .input::placeholder {
-        color: black; /* ודא שהצבע קריא */
+        color: black;
         font-size: 16px;
     }
+
+    input::-webkit-input-placeholder { 
+        color: #888;
+    }
+
     .formHeader {
         font-size: 1.5em;
     }
