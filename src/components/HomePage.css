@@ -6,13 +6,12 @@
 
 .homePageMainLine {
     text-decoration: underline;
-    color: black;
+    color: green;
 }
 
 .headerText {
     width: 50%;
     background-color: gainsboro;
-    color: black;
     padding: 3px;
     
 }
@@ -29,6 +28,11 @@
 
 ul li {
     list-style-position:inside;
+}
+
+h2 {
+    color: blue;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

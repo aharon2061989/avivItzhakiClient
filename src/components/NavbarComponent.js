@@ -13,12 +13,20 @@ function NavbarComponent() {
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} size="2xl" style={{color: "#1877F7",}}/></a>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size="2xl" style={{color: "#f773c7",}}/></a>
                     <a href="https://wa.me/972504066900" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faSquareWhatsapp} size="2xl" style={{color: "#028860",}}/></a>
+                    <div className="phonemailIcons">
+                        <a className="phone" href="tel:+972504066900"><h4>050-406-6900</h4></a>
+                        <FontAwesomeIcon className="icon" icon={faPhone} flip="horizontal"
+                        size="xl" style={{"--fa-secondary-color": "#ffffff",}}/>
+                        
+                        <a className="email" href="mailto:avivtaxes@gmail.com"><h4>avivtaxes@gmail.com</h4></a>
+                        <FontAwesomeIcon className="icon" icon={faEnvelope} size="xl"/>
+                    </div>
+
                 </div>
                 <div className="rightIcons">
-
-                <div className="links">
-                    <div className="dropdown">
-                        <Link className="secondNav" id="information"><h3>מידע</h3></Link>
+                    <div className="links">
+                        <div className="dropdown">
+                            <Link className="secondNav" id="information"><h3>מידע</h3></Link>
                         <div className="dropdown-content">
                             <Link to="/SeverancePayInfo">החזר עבור משיכת פיצויים</Link>
                             <Link to="/EducationFundInfo">החזר עבור משיכת קרן השתלמות</Link>
@@ -26,17 +34,12 @@ function NavbarComponent() {
                             <Link to="/InformationGeneral">החזרי מס כללי</Link>
                         </div>
                     </div>
-                    <Link to='/Forms' className="secondNav"><h3>טפסים להורדה</h3></Link>
-                    <Link to='/ContactPage' className="secondNav"><h3>צור קשר</h3></Link>
-                    <Link to='/' className="secondNav" id=""><h3>ראשי</h3></Link>
-                </div>
+                        <Link to='/Forms' className="secondNav"><h3>טפסים להורדה</h3></Link>
+                        <Link to='/ContactPage' className="secondNav"><h3>צור קשר</h3></Link>
+                        <Link to='/' className="secondNav" id=""><h3>ראשי</h3></Link>
+                    </div>
 
 
-                    <a className="phone" href="tel:+972504066900"><h4>050-406-6900</h4></a>
-                    <FontAwesomeIcon className="icon" icon={faPhone} flip="horizontal"
-                    size="xl" style={{"--fa-secondary-color": "#ffffff",}}/>
-                    <a className="email" href="mailto:avivtaxes@gmail.com"><h4>avivtaxes@gmail.com</h4></a>
-                    <FontAwesomeIcon className="icon" icon={faEnvelope} size="xl"/>
                 </div>
             </div>
         </div>
