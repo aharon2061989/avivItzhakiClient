@@ -139,26 +139,5 @@ a:hover {
 
 }
 
-::placeholder {
-    color: #888; 
-    opacity: 1; 
-  }
-  
-  ::-webkit-input-placeholder { 
-    color: #888;
-    opacity: 1;
-  }
-  
-  input:-ms-input-placeholder { 
-    color: #888;
-  }
-  
-  input::-moz-placeholder { 
-    color: #888;
-  }
-  
-  input:-moz-placeholder { 
-    color: #888;
-  }
-  
+
 
