@@ -102,6 +102,11 @@ input:-moz-placeholder {
         font-size: 14px;
         margin-top: 10px;
     }
+
+    .form input::placeholder {
+        font-size: large;
+        color: #666; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -117,6 +122,11 @@ input:-moz-placeholder {
     .formSubmitButton {
         font-size: 12px;
         padding: 8px;
+    }
+
+    .form input::placeholder {
+        font-size: medium;
+        color: #444; 
     }
 }
 
