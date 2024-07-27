@@ -1,12 +1,12 @@
 .navbar {
-    height: 52px;
+    height: 3em;
     width: 100%;
     background-color: rgb(60, 60, 60);
     color: white;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
 
 .icon {
@@ -24,11 +24,11 @@
 a {
     text-decoration: none;
     transition: transform 0.3s, color 0.3s;
-    color: blue; 
+    color: blue;
 }
 
 a:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
     color: gold;
     text-decoration: underline;
 }
@@ -36,10 +36,8 @@ a:hover {
 .rightIcons {
     display: flex;
     align-items: center;
-    gap: 15px;
     padding-right: 10px;
 }
-
 
 .leftIcons {
     display: flex;
@@ -114,6 +112,78 @@ a:hover {
     display: block;
 }
 
+.burgerMenu {
+    height: 2em;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burgerBar {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.visible {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    position: fixed;
+    top: 3.1em;
+    right: 0;
+    height: calc(100% - 3.1em);
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    align-items: end;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu.hidden {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    position: fixed;
+    top: 3.1em;
+    right: 0;
+    height: calc(100% - 3.1em);
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    align-items: end;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    margin-top: 1em;
+    border-bottom: 1px solid gold;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
 @media (max-width: 768px) {
     .navbar {
         display: flex;
@@ -133,11 +203,39 @@ a:hover {
     .rightIcons {
         display: none;
     }
+
+    .burgerMenu {
+        height: 2.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .burgerBar {
+        margin-right: 10px;
+        width: 1em;
+        height: 0.5em;
+        background-color: white;
+        border-radius: 0.5em;
+    }
 }
 
 @media (max-width: 480px) {
-
+    .burgerMenu {
+        height: 2.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    .burgerBar {
+        width: 2em;
+        height: 0.5em;
+        background-color: white;
+        border-radius: 0.5em;
+    }
 }
-
-
-
