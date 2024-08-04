@@ -39,7 +39,6 @@ function ContactForm() {
             setEmail('');     
             setPhoneNumber(''); 
             setSubject('');
-            console.log("working!!!") 
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -50,7 +49,7 @@ function ContactForm() {
 
     return(
         <div className="contactForm">
-            <h1 className="formHeader">לפגישת ייעוץ חינם השאר פרטים</h1>
+            <h1 className="formHeader">לפגישת ייעוץ נא השאר פרטים</h1>
             <form className="form" onSubmit={handleSubmit}>
                 <input type="text" id="name" value={fullName} placeholder="שם מלא" required onChange={(e) => setFullName(e.target.value)}></input>
                 <input type="email" id="email" value={email} placeholder="אימייל" required onChange={(e) => setEmail(e.target.value)}></input>

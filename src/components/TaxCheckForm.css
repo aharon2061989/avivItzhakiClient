@@ -1,0 +1,77 @@
+.formConteiner {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+}
+
+.questionsConteiner {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.question {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    margin-right: 10px; 
+}
+
+.label, select {
+    width: 100%;
+    padding: 10px;
+    font-size: large; 
+}
+
+.nameInput {
+    height:60px;
+    font-size: large;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked::before {
+    content: '✔';
+    display: block;
+    color: white;
+    background-color: #007bff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.custom-checkbox label {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.sendButton {
+    background-color: green;
+    color: white;
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+}
+
+
