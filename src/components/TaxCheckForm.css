@@ -74,4 +74,41 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .questionsConteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question {
+        width: 100%;
+        margin-right: 0; /* להסיר את הריווח בין השאלות */
+        margin-bottom: 10px; /* להוסיף ריווח בין השאלות בטור */
+    }
+
+    .sendButton {
+        width: 100%; /* כפתור שלח יכסה את רוחב המסך */
+    }
+}
+
+@media (max-width: 480px) {
+    .nameInput {
+        height: 50px;
+        font-size: medium;
+    }
+
+    .custom-checkbox input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .custom-checkbox label {
+        font-size: 14px;
+    }
+
+    .sendButton {
+        height: 35px;
+        font-size: 16px;
+    }
+}
 

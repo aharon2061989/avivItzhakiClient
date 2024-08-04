@@ -3,12 +3,10 @@ import './TaxCheckForm.css';
 import Modal from "react-modal";
 
 function TaxCheckForm() {
-    const [isChecked, setIsChecked] = useState(false);
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const openModal = () => setModalIsOpen(true);
     const closeModal = () => setModalIsOpen(false);
     const [isFormComplete, setIsFormComplete] = useState(true);
-
 
     const [formData, setFormData] = useState({
         salary:"",
@@ -26,12 +24,9 @@ function TaxCheckForm() {
         agreeToContact:false
     });
 
-    const handleCheckboxChange = (event) => {
-      setIsChecked(event.target.checked);
-    };
-
     const isFormValid = () => {
         const { salary, partnerSalary, cashWithdrawal, jobChange, fullName, phoneNumber, email, agreeToContact } = formData;
+        console.log('Form Data:', formData);
         return salary && partnerSalary && cashWithdrawal && jobChange && fullName && phoneNumber && email && agreeToContact;
     };
 
@@ -45,7 +40,17 @@ function TaxCheckForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch('https://aviv-itzhaki-server-9c0d7550483a.herokuapp.com/email/register/taxCheckForm', {
+    
+        if (!isFormValid()) {
+            console.log('Form is not valid');
+            setIsFormComplete(false);
+            openModal();
+            return;
+        }
+
+        
+    
+        fetch('https://aviv-itzhaki-server-9c0d7550483a.herokuapp.com/email/taxCheckForm', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -54,7 +59,7 @@ function TaxCheckForm() {
         })
         .then(response => response.text())
         .then(data => {
-            console.log(data);
+            console.log('Success:', data);
             setIsFormComplete(true);
             openModal();
         })
@@ -64,9 +69,6 @@ function TaxCheckForm() {
             openModal();
         });
     };
-    
-
-
 
     return(
         <div className="formConteiner">
@@ -75,7 +77,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>משכורת חודשית ממוצעת (ברוטו):</label>
                     <select name="salary" value={formData.salary} onChange={handleChange}>
-                        <option>יש לבחור משכורת מהרשימה</option>
+                        <option value="">יש לבחור משכורת מהרשימה</option>
                         <option> עד 6000  ש"ח</option>
                         <option> כ- 7000 ש"ח</option>
                         <option> כ- 8000 ש"ח</option>
@@ -108,7 +110,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>משכורת בן/בת הזוג:</label>
                     <select name="partnerSalary" value={formData.partnerSalary} onChange={handleChange}>
-                        <option>אין לי בן/בת זוג</option>
+                        <option value="">אין לי בן/בת זוג</option>
                         <option> עד 6000  ש"ח</option>
                         <option> כ- 7000 ש"ח</option>
                         <option> כ- 8000 ש"ח</option>
@@ -141,7 +143,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם משכת כספים מקרן הפנסיה, קופת גמל, פיצויים או קרן השתלמות ושילמת מס?</label>
                     <select name="cashWithdrawal" value={formData.cashWithdrawal} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -150,7 +152,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם ב-6 השנים האחרונות החלפת עבודות?</label>
                     <select name="jobChange" value={formData.jobChange} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -161,7 +163,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם נולד לך ילד / ילדה ב- 6 השנים האחרונות?</label>
                     <select name="babyBirth" value={formData.babyBirth} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -170,7 +172,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם ספגת הפסדים בשוק ההון ב-6 השנים האחרונות?</label>
                     <select name="capitalMarketLose" value={formData.capitalMarketLose} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -179,7 +181,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם הייתה לך תקופה ללא תעסוקה ב-6 השנים האחרונות?</label>
                     <select name="unemployed" value={formData.unemployed} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -188,7 +190,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם אתה גרוש ומשלם מזונות?</label>
                     <select name="divorceAndPayFoods" value={formData.divorceAndPayFoods} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -200,7 +202,7 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>האם שילמת מס הכנסה ב-6 השנים האחרונות?</label>
                     <select name="taxPaid" value={formData.taxPaid} onChange={handleChange}>
-                        <option>בחר</option>
+                        <option value="">בחר</option>
                         <option>כן</option>
                         <option>לא</option>
                     </select>
@@ -244,9 +246,10 @@ function TaxCheckForm() {
                 <div className="custom-checkbox">
                     <input
                         type="checkbox"
+                        name="agreeToContact"
                         id="checkbox"
-                        checked={isChecked}
-                        onChange={handleCheckboxChange}
+                        checked={formData.agreeToContact}
+                        onChange={handleChange}
                     />
                     <label htmlFor="checkbox">אני מאשר/ת שיחזרו אלי להמשך התהליך</label>
                 </div>
@@ -303,7 +306,3 @@ function TaxCheckForm() {
 }
 
 export default TaxCheckForm;
-
-
-
-
