@@ -7,7 +7,7 @@ function SeverancePayInfo() {
     return(
         <div>
             <div className="severancePayInfoHeader">
-                <img src="/images/severance-pay.jpg" alt="Severance Pay" title="Image by freepik" className="secerancePayImage"/>
+                <img src="/images/severance-pay.jpg" alt="Severance Pay" title="Image by freepik" className="secerancePayImage" rel="preload"/>
                 <div className="infoText">
                     <h1>פיצויי פיטורין והחזרי מס.</h1>
                     <h4>פיצויי פיטורין הם סכום כסף המשולם לעובד שפוטר ממקום עבודתו, או התפטר בתנאים מסוימים. עובדים רבים אינם מודעים לזכויותיהם ולמיסים הכרוכים בקבלת פיצויים אלה.</h4>

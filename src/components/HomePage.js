@@ -7,7 +7,7 @@ function HomePage() {
     return(
         <div>
             <div className="homePageHeader">
-                <img src="/images/refunds img.jpg" alt="refundsImage" className="refundsImg" title="image"/>
+                <img src="/images/refunds img.jpg" alt="refundsImage" className="refundsImg" title="image" rel="preload"/>
                 <div className="headerText" dir="rtl">
                     <h1 className="homePageMainLine">אביב יצחקי - מומחה להחזרי מס לשכירים.</h1>
                     <h4>החשיבות של אדם אמין וישר בתהליך החזרי מס לשכירים. אדם כזה יכול לעשות את ההבדל בין תהליך מסורבל ומבלבל לבין חוויה קלה ומוצלחת שמביאה לכם החזרים משמעותיים.</h4>

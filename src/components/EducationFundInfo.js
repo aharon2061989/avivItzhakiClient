@@ -7,7 +7,7 @@ function EducationFundInfo() {
     return(
         <div>
             <div className="educationFundsHeader">
-                <img src="/images/eduction-refund-concept.jpg" alt="education funds" title="Image by freepik" className="educationFundsHeaderImage"/>
+                <img src="/images/eduction-refund-concept.jpg" alt="education funds" title="Image by freepik" className="educationFundsHeaderImage" rel="preload"/>
                 <div className="infoText">
                     <h1>קרן השתלמות.</h1>
                     <h4>קרן השתלמות היא תוכנית חיסכון לטווח בינוני, שמטרתה לעודד עובדים לחסוך לטובת השתלמות מקצועית. הקרן מאפשרת ליהנות מהטבות מס ייחודיות ומהכנסות פטורות ממס במידה ועומדים בתנאים הנדרשים.</h4>

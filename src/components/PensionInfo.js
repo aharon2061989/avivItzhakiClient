@@ -7,7 +7,7 @@ function PensionInfo() {
     return(
         <div>
             <div className="pensionInfoHeader">
-                <img src="/images/pension-advice.jpg" alt="pension Advice" title="Image by freepik" className="pensionAdviceImage"/>
+                <img src="/images/pension-advice.jpg" alt="pension Advice" title="Image by freepik" className="pensionAdviceImage" rel="preload"/>
                 <div className="infoText">
                     <h1>פנסיה.</h1>
                     <h4>תוכנית הפנסיה היא אחת מאבני היסוד של ביטחון כלכלי לעת פרישה. כל עובד זכאי להפרשות לפנסיה לאורך תקופת העבודה, שתאפשר לו לקבל קצבה חודשית לאחר הפרישה.</h4>

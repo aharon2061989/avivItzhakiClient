@@ -7,7 +7,7 @@ function InformationGeneral() {
     return(
         <div>
             <div className="informationGeneralHeader">
-                <img src="/images/tax-return-image.jpg" alt="tax return" title="Image by freepik" className="informationGeneralImage"/>
+                <img src="/images/tax-return-image.jpg" alt="tax return" title="Image by freepik" className="informationGeneralImage" rel="preload"/>
                 <div className="textInfo">
                     <h1>החזרי מס כלליים ובקשה להחזר מס.</h1>
                     <h3>סיבות נפוצות להחזרי מס:</h3>

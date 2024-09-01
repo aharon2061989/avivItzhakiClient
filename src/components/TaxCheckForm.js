@@ -45,8 +45,11 @@ function TaxCheckForm() {
             console.log('Form is not valid');
             setIsFormComplete(false);
             openModal();
+            console.log(formData)
             return;
         }
+
+        console.log(formData);
 
         
     
@@ -110,7 +113,8 @@ function TaxCheckForm() {
                 <div className="question">
                     <label>משכורת בן/בת הזוג:</label>
                     <select name="partnerSalary" value={formData.partnerSalary} onChange={handleChange}>
-                        <option value="">אין לי בן/בת זוג</option>
+                        <option value="">בחר</option>
+                        <option>אין לי בן/בת זוג</option>
                         <option> עד 6000  ש"ח</option>
                         <option> כ- 7000 ש"ח</option>
                         <option> כ- 8000 ש"ח</option>
