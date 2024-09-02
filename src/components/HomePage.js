@@ -7,10 +7,10 @@ function HomePage() {
     return(
         <div>
             <div className="homePageHeader">
-                <img src="/images/refunds img.jpg" alt="refundsImage" className="refundsImg" title="image" rel="preload"/>
+                <img src="/images/refunds img.jpg" alt="refundsImage" className="refundsImg" title="image" rel="preload" loading="lazy"/>
                 <div className="headerText" dir="rtl">
                     <h1 className="homePageMainLine">אביב יצחקי - מומחה להחזרי מס לשכירים.</h1>
-                    <h4>החשיבות של אדם אמין וישר בתהליך החזרי מס לשכירים. אדם כזה יכול לעשות את ההבדל בין תהליך מסורבל ומבלבל לבין חוויה קלה ומוצלחת שמביאה לכם החזרים משמעותיים.</h4>
+                    <h4>"נעים מאוד, אני אביב יצחקי,  בעל תואר ראשון בכלכלה ומנהל עסקים ועבר תעסוקתי במס הכנסה. ואני כאן כדי לעזור לכם לקבל את מה שמגיע לכם! עם ניסיון ומומחיות בתחום החזרי מס לשכירים  וידע מקצועי ממס הכנסה שרכשתי בתקופת עבודתי שם, אני מבטיח ללוות אתכם בתהליך החזר המס בצורה מקצועית, אישית ויעילה. אל תוותרו על הכסף שלכם – פנו אליי עוד היום, ואני אדאג שתראו את החזר המס שאתם זכאים לו!"</h4>
                     <h2>יושרה ושקיפות:</h2>
                     <h4>הצגת תהליך החזר המס באופן ברור ומפורט.</h4>
                     <h4>דיווח על כל העלויות מראש ללא עמלות נסתרות.</h4>
@@ -24,7 +24,6 @@ function HomePage() {
                     <h4>אני כאן כדי לענות על כל שאלה שיש לכם.</h4>
                 </div>
             </div>
-            <TaxCheckForm/>
         </div>
 
     );

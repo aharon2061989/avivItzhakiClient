@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "./ContactForm";
+import TaxCheckForm from "./ContactForm";
 import "./PensionInfo.css";
 
 function PensionInfo() {
@@ -7,7 +7,7 @@ function PensionInfo() {
     return(
         <div>
             <div className="pensionInfoHeader">
-                <img src="/images/pension-advice.jpg" alt="pension Advice" title="Image by freepik" className="pensionAdviceImage" rel="preload"/>
+                <img src="/images/pension-advice.jpg" alt="pension Advice" title="Image by freepik" className="pensionAdviceImage" rel="preload" loading="lazy"/>
                 <div className="infoText">
                     <h1>פנסיה.</h1>
                     <h4>תוכנית הפנסיה היא אחת מאבני היסוד של ביטחון כלכלי לעת פרישה. כל עובד זכאי להפרשות לפנסיה לאורך תקופת העבודה, שתאפשר לו לקבל קצבה חודשית לאחר הפרישה.</h4>
@@ -22,7 +22,6 @@ function PensionInfo() {
                     <h2>אם ביצעתם משיכות פנסיה בין השנים 2018-2023, פנו אלינו לייעוץ מקצועי ולבדוק את זכאותכם להחזרי מס. ייתכן שמגיע לכם סכומים נכבדים שיכולים לשפר את מצבכם הכלכלי.</h2>
                 </div>
             </div>
-            <ContactForm/>
         </div>
     )
 }

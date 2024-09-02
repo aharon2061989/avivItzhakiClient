@@ -9,6 +9,7 @@ import EducationFundInfo from "./components/EducationFundInfo";
 import SeverancePayInfo from "./components/SeverancePayInfo";
 import InformationGeneral from "./components/InformationGeneral";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TaxCheckForm from "./components/TaxCheckForm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/InformationGeneral" element={<InformationGeneral/>} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
       </Routes>
+      <TaxCheckForm/>
       <Footer/>
     </Router>
   );

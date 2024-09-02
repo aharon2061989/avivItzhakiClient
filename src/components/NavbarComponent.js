@@ -62,13 +62,10 @@ function NavbarComponent() {
             <div className={menuClass} id="menu">
                 <Link to='/' onClick={updateMenu}>ראשי</Link>
                 <Link to='/ContactPage' onClick={updateMenu}>צור קשר</Link>
-                <Link>מידע</Link> 
-
-
-                 <Link to="/SeverancePayInfo" onClick={updateMenu}>החזר על משיכת פיצויים</Link>
-                <Link to="/EducationFundInfo" onClick={updateMenu}>החזר על קרן השתלמות</Link>
-                <Link to="/PensionInfo" onClick={updateMenu}>החזר על משיכת פנסיה</Link>
-                <Link to="/InformationGeneral" onClick={updateMenu}>החזרי מס כללי</Link>
+                <Link to="/SeverancePayInfo" onClick={updateMenu}>מידע בנושא החזר על משיכת פיצויים</Link>
+                <Link to="/EducationFundInfo" onClick={updateMenu}>מידע בנושא החזר על קרן השתלמות</Link>
+                <Link to="/PensionInfo" onClick={updateMenu}>מידע בנושא החזר על משיכת פנסיה</Link>
+                <Link to="/InformationGeneral" onClick={updateMenu}>מידע בנושא החזרי מס כללי</Link>
             </div>
         </div>
     );

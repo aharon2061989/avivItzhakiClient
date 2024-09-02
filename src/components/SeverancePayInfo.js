@@ -1,13 +1,13 @@
 import React from "react";
 import "./SeverancePayInfo.css";
-import ContactForm from "./ContactForm"
+import TaxCheckForm from "./ContactForm"
 
 function SeverancePayInfo() {
 
     return(
         <div>
             <div className="severancePayInfoHeader">
-                <img src="/images/severance-pay.jpg" alt="Severance Pay" title="Image by freepik" className="secerancePayImage" rel="preload"/>
+                <img src="/images/severance-pay.jpg" alt="Severance Pay" title="Image by freepik" className="secerancePayImage" rel="preload" loading="lazy"/>
                 <div className="infoText">
                     <h1>פיצויי פיטורין והחזרי מס.</h1>
                     <h4>פיצויי פיטורין הם סכום כסף המשולם לעובד שפוטר ממקום עבודתו, או התפטר בתנאים מסוימים. עובדים רבים אינם מודעים לזכויותיהם ולמיסים הכרוכים בקבלת פיצויים אלה.</h4>
@@ -23,7 +23,6 @@ function SeverancePayInfo() {
 
                 </div>
             </div>
-            <ContactForm/>
         </div>
 
     )

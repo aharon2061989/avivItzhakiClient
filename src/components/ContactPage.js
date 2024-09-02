@@ -50,9 +50,9 @@ function ContactPage() {
 
     return(
         <div className="contactUs">
-            <img src="/images/contact-banner-2.jpg" alt="contact us" title="צור קשר" className="contactLogo" rel="preload"/>
+            <img src="/images/contact-banner-2.jpg" alt="contact us" title="צור קשר" className="contactLogo" rel="preload" loading="lazy"/>
             <div className="contactPageMain">
-                <img src="/images/second-logo-contactPage.jpg" alt="contactPageLogo" title="logo" className="secondLogo" rel="preload"/>
+                <img src="/images/second-logo-contactPage.jpg" alt="contactPageLogo" title="logo" className="secondLogo" rel="preload" loading="lazy"/>
                 <div className="contactPageForm">
                     <form className="contactFormInputs" onSubmit={handleSubmit}>
                         <input 

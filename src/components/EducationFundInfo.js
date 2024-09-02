@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
+import TaxCheckForm from "./TaxCheckForm";
 import "./EducationFundsInfo.css";
 
 function EducationFundInfo() {
@@ -7,7 +8,7 @@ function EducationFundInfo() {
     return(
         <div>
             <div className="educationFundsHeader">
-                <img src="/images/eduction-refund-concept.jpg" alt="education funds" title="Image by freepik" className="educationFundsHeaderImage" rel="preload"/>
+                <img src="/images/eduction-refund-concept.jpg" alt="education funds" title="Image by freepik" className="educationFundsHeaderImage" rel="preload" loading="lazy"/>
                 <div className="infoText">
                     <h1>קרן השתלמות.</h1>
                     <h4>קרן השתלמות היא תוכנית חיסכון לטווח בינוני, שמטרתה לעודד עובדים לחסוך לטובת השתלמות מקצועית. הקרן מאפשרת ליהנות מהטבות מס ייחודיות ומהכנסות פטורות ממס במידה ועומדים בתנאים הנדרשים.</h4>
@@ -22,7 +23,6 @@ function EducationFundInfo() {
                     <h2>אם ביצעתם משיכות מקרן השתלמות לפני המועד בין השנים 2018-2023, פנו אלינו לייעוץ מקצועי ולבדוק את זכאותכם להחזרי מס. ייתכן שמגיע לכם סכומים נכבדים שיכולים לשפר את מצבכם הכלכלי.</h2>
                 </div>
             </div>
-            <ContactForm/>
         </div>
 
     )
