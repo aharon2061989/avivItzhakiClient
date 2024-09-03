@@ -1,6 +1,5 @@
 import React from "react";
 import "./SeverancePayInfo.css";
-import TaxCheckForm from "./ContactForm"
 
 function SeverancePayInfo() {
 

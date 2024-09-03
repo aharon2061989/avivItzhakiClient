@@ -1,6 +1,4 @@
 import React from "react";
-import ContactForm from "./ContactForm";
-import TaxCheckForm from "./TaxCheckForm";
 import "./EducationFundsInfo.css";
 
 function EducationFundInfo() {

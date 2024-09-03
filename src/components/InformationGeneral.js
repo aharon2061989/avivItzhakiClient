@@ -1,6 +1,5 @@
 import React from "react";
 import "./InformationGeneral.css";
-import ContactForm from "./ContactForm"
 
 function InformationGeneral() {
 

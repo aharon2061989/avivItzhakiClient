@@ -1,6 +1,5 @@
 import React from "react";
 import './HomePage.css';
-import TaxCheckForm from "./TaxCheckForm";
 
 function HomePage() {
 

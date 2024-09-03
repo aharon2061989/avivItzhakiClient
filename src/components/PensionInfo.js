@@ -1,14 +1,25 @@
-import React from "react";
-import TaxCheckForm from "./ContactForm";
+import React, { useEffect, useState } from "react";
 import "./PensionInfo.css";
 
 function PensionInfo() {
 
+    const [imageSrc, setImageSrc] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = "/images/pension-advice.jpg";
+        img.onload = () => {
+            setImageSrc(img.src);
+            setIsLoaded(true);
+        };
+    }, []);
+
     return(
         <div>
             <div className="pensionInfoHeader">
-                <img src="/images/pension-advice.jpg" alt="pension Advice" title="Image by freepik" className="pensionAdviceImage" rel="preload" loading="lazy"/>
-                <div className="infoText">
+            <img src={isLoaded ? imageSrc : ''} alt="pension Advice" title="Image by freepik" className="pensionAdviceImage" rel="preload" loading="lazy"/>
+            <div className="infoText">
                     <h1>פנסיה.</h1>
                     <h4>תוכנית הפנסיה היא אחת מאבני היסוד של ביטחון כלכלי לעת פרישה. כל עובד זכאי להפרשות לפנסיה לאורך תקופת העבודה, שתאפשר לו לקבל קצבה חודשית לאחר הפרישה.</h4>
                     <h3>מהי פנסיה?</h3>
