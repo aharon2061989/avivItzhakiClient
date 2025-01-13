@@ -51,9 +51,8 @@ function TaxCheckForm() {
 
         console.log(formData);
 
-        
     
-        fetch('https://aviv-itzhaki-server-9c0d7550483a.herokuapp.com/email/taxCheckForm', {
+        fetch('https://aviv-itzhaki-server-9c0d7550483a.herokuapp.com/email/taxCheckForm' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -62,7 +61,6 @@ function TaxCheckForm() {
         })
         .then(response => response.text())
         .then(data => {
-            console.log('Success:', data);
             setIsFormComplete(true);
             openModal();
         })
