@@ -52,7 +52,7 @@ function TaxCheckForm() {
         console.log(formData);
 
     
-        fetch('https://aviv-itzhaki-server-9c0d7550483a.herokuapp.com/email/taxCheckForm' , {
+        fetch('avivtaxes@gmail.com' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
