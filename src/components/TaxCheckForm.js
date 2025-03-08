@@ -52,7 +52,7 @@ function TaxCheckForm() {
         console.log(formData);
 
     
-        fetch('avivtaxes@gmail.com' , {
+        fetch('http://localhost:8080/email/taxCheckForm' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

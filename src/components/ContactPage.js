@@ -25,7 +25,7 @@ function ContactPage() {
             subject
         };
         
-        fetch('avivtaxes@gmail.com', {
+        fetch('https://aviv-itzhaki-server-42e652f01227.herokuapp.com/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -10,6 +10,7 @@ import SeverancePayInfo from "./components/SeverancePayInfo";
 import InformationGeneral from "./components/InformationGeneral";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TaxCheckForm from "./components/TaxCheckForm";
+import Accessibility from "./components/Accessibility";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/SeverancePayInfo" element={<SeverancePayInfo/>} />
         <Route path="/InformationGeneral" element={<InformationGeneral/>} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+        <Route path="Accessibility" element={<Accessibility/>} />
       </Routes>
       <TaxCheckForm/>
       <Footer/>

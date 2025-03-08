@@ -25,7 +25,8 @@ function Footer() {
                     <ul>
                         <li><Link to="/InformationGeneral#top" onClick={scrollToTop}>מידע כללי</Link></li>
                         <li><Link to="/ContactPage" onClick={scrollToTop}>צור קשר</Link></li>
-                        <li><Link to="/PrivacyPolicy" onClick={scrollToTop}>מדיניות פרטיות ותנאי שימוש</Link></li>
+                        <li><Link to="/PrivacyPolicy" onClick={scrollToTop}> תנאי שימוש</Link></li>
+                        <li><Link to="Accessibility" onClick={scrollToTop}>הצהרת נגישות</Link></li>
                     </ul>
                 </div>
                 <div className="footerSection">
