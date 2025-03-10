@@ -52,7 +52,7 @@ function TaxCheckForm() {
         console.log(formData);
 
     
-        fetch('https://api.avivtaxrefund.co.il/email/register/taxCheckForm' , {
+        fetch('https://api.avivtaxrefund.co.il/email/taxCheckForm' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
