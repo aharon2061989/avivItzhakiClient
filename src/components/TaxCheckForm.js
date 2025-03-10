@@ -68,21 +68,23 @@ function TaxCheckForm() {
             console.error('Error:', error);
             setIsFormComplete(false);
             openModal();
-            setFormData({
-                salary: "",
-                partnerSalary: "",
-                cashWithdrawal: "",
-                jobChange: "",
-                babyBirth: "",
-                capitalMarketLose: "",
-                unemployed: "",
-                divorceAndPayFoods: "",
-                taxPaid: "",
-                fullName: "",
-                phoneNumber: "",
-                email: "",
-                agreeToContact: false
-            });
+            setTimeout(() => {
+                setFormData({
+                    salary: "",
+                    partnerSalary: "",
+                    cashWithdrawal: "",
+                    jobChange: "",
+                    babyBirth: "",
+                    capitalMarketLose: "",
+                    unemployed: "",
+                    divorceAndPayFoods: "",
+                    taxPaid: "",
+                    fullName: "",
+                    phoneNumber: "",
+                    email: "",
+                    agreeToContact: false
+                });    
+            })
         }); 
     };
 
